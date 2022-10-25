@@ -19,33 +19,17 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@definitions/*": [
-        "src/definitions/*"
-      ],
-      "@definitions": [
-        "src/definitions"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@components": [
-        "src/components"
-      ],
-      "@public/*": [
-        "public/*"
-      ],
-      "@public": [
-        "public"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@styles": [
-        "src/styles"
-      ],
-      "@i18n": [
-        "./i18n.json"
-      ]
+        "@definitions/*": ["src/definitions/*"],
+        "@definitions": ["src/definitions"],
+        "@components/*": ["src/components/*"],
+        "@components": ["src/components"],
+        "@public/*": ["public/*"],
+        "@public": ["public"],
+        "@styles/*": ["src/styles/*"],
+        "@styles": ["src/styles"],
+        "@i18n": ["./i18n.json"],
+        "@lib": ["src/lib"],
+        "@lib*": ["src/lib/*"]
     },
     "incremental": true
   },

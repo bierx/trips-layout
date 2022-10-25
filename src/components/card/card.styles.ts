@@ -7,6 +7,7 @@ import {
 
 import { RatingWrapper } from "../rating/rating.styles";
 import { Emission } from "../emission/emission.styles";
+import { media } from "@lib/media";
 
 export const Card = styled(Box)`
     --color: #fff;
@@ -15,10 +16,14 @@ export const Card = styled(Box)`
     border: 10px solid var(--color);
     background-size: cover;
     text-align: center;
-    max-width: 400px;
-    padding: 0 40px;
-    padding-top: 75px;
+    width: 100%;
+    padding: 75px 20px 0;
     box-shadow: 0px 0px 25px 0px rgba(66, 68, 90, 0.22);
+
+    ${media.xs} {
+        width: 400px;
+        padding: 75px 40px 0;
+    }
 
     ${RatingWrapper} {
         margin-top: 25px;

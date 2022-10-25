@@ -25,6 +25,12 @@
     npm run start
 ```
 
+### Running the storybook.
+
+```bash
+    npm run storybook
+```
+
 ### Running the cypress tests.
 
 ```bash

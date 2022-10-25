@@ -1,0 +1,28 @@
+{
+   "trips": [
+        {
+            "title": "European Quest",
+            "description": "8 Countries, 21 days",
+            "emission": "810 kg CO₂e",
+            "rating": 4.7,
+            "image": "https://as1.ftcdn.net/v2/jpg/03/06/86/54/1000_F_306865414_nNA4AkSzoVmCxSxKo1q2nS7OSLIoOgV1.jpg",
+            "id": "1"
+        },
+        {
+            "title": "Autumn Roadtrip",
+            "description": "1 country, 14 days",
+            "emission": "3.56 t CO₂e",
+            "rating": 4.7,
+            "image": "https://as1.ftcdn.net/v2/jpg/00/81/26/82/1000_F_81268225_eVHynMTlVQf3wVdYOoUEz8d8KolhVZm0.jpg",
+            "id": "2"
+        },
+        {
+            "title": "Diving adventure in Egypt",
+            "description": "1 country, 5 days",
+            "emission": "6.92 t CO₂e",
+            "rating": 4.7,
+            "image": "https://as1.ftcdn.net/v2/jpg/00/74/14/90/1000_F_74149068_aCJBLmfHEjwCrdGyc9FT1ST5B5w2mOfC.jpg",
+            "id": "3"
+        }
+   ]
+}

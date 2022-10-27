@@ -9,6 +9,11 @@ import { RatingWrapper } from "../rating/rating.styles";
 import { Emission } from "../emission/emission.styles";
 import { media } from "@lib/media";
 
+export const ContentWrapper = styled(Box)`
+    z-index: 1;
+    position: relative;
+`;
+
 export const Card = styled(Box)`
     --color: #fff;
     --radius: 10px;
@@ -19,6 +24,12 @@ export const Card = styled(Box)`
     width: 100%;
     padding: 75px 20px 0;
     box-shadow: 0px 0px 25px 0px rgba(66, 68, 90, 0.22);
+    position: relative;
+
+    ${RatingWrapper} {
+        z-index: 1;
+        position: relative;
+    }
 
     ${media.xs} {
         width: 400px;
@@ -27,6 +38,8 @@ export const Card = styled(Box)`
 
     ${RatingWrapper} {
         margin-top: 25px;
+        z-index: 1;
+        position: relative;
     }
 
     ${Emission} {

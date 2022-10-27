@@ -3,8 +3,8 @@ export async function fetcher<TResponse>(
     config: RequestInit = {},
 ): Promise<TResponse> {
     try {
-        const response = await fetch(url, config).then((res) => res.json());
-        return JSON.parse(response) as TResponse;
+        const response = await fetch(url, config);
+        return await response.json();
     } catch {
         throw new Error("fetch failed");
     }

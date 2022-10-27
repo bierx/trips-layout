@@ -11,5 +11,5 @@ export default async function handler(
         jsonDirectory + "/trips.json",
         "utf8",
     );
-    res.status(200).json(fileContents);
+    res.status(200).json(JSON.parse(fileContents));
 }

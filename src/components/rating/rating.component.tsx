@@ -11,7 +11,9 @@ export const Rating: React.FC<IRating> = ({ rating }) => {
     const stars = useMemo(() => {
         return Array.from(Array(6).keys())
             .slice(1)
-            .map((value) => <Star rating={rating} value={value} key={value} />);
+            .map((value) => (
+                <Star rating={rating} value={value} id={value} key={value} />
+            ));
     }, [rating]);
 
     return (

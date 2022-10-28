@@ -3,16 +3,18 @@ import React, { useMemo } from "react";
 interface IStarSvg {
     isFill?: boolean;
     fillTo?: number;
+    id: number;
 }
 
-export const StarSvg: React.FC<IStarSvg> = ({ isFill, fillTo }) => {
+export const StarSvg: React.FC<IStarSvg> = ({ isFill, fillTo, id }) => {
+    const gradientId = `gradient-${id}`;
     const svgFill = useMemo(() => {
         if (isFill) {
             return "#F8D64E";
         }
 
         if (fillTo) {
-            return "url(#gradient)";
+            return `url(#${gradientId})`;
         }
 
         return "#1e253b";
@@ -28,7 +30,7 @@ export const StarSvg: React.FC<IStarSvg> = ({ isFill, fillTo }) => {
         >
             {fillTo && (
                 <defs>
-                    <linearGradient id="gradient">
+                    <linearGradient id={gradientId}>
                         <stop stopColor="#F8D64E" stopOpacity="1" offset="0%" />
                         <stop
                             stopColor="#F8D64E"

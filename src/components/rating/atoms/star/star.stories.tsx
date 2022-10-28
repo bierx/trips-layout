@@ -12,6 +12,6 @@ const Template: Story<IStar> = (args) => <Star {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-    rating: 3.7,
+    rating: 2.2,
     value: 3,
 };

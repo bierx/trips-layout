@@ -50,7 +50,7 @@ export const Card = styled(Box)`
 export const Heading = styled(ChakraHeading)`
     color: var(--color);
     margin-bottom: 5px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 `;
 
